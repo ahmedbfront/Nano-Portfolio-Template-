@@ -1,0 +1,64 @@
+// Start Section Contact 
+section(class='contact pd-top' id='contact')
+  .container
+    // Page Title 
+    .page-title
+      h2 get #[span in touch]
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    .row.pd-btm
+      // Start Contact Info 
+      .col-md-4
+        .contact-info
+          ul.list-unstyled
+            li
+              h5 #[span Email]
+                i.far.fa-envelope
+                | badr@example.com
+            li
+              h5 #[span Phone]
+                i.fab.fa-whatsapp
+                | + (00) 123 456 789
+            li
+              h5 #[span Address]
+                i.fas.fa-map-marker-alt
+                | Alexandria, Egypt
+            li
+              h5 #[span Follow me]
+              ul.list-unstyled.social
+                li: a(href='#')
+                  i.fab.fa-linkedin-in
+                li: a(href='#')
+                  i.fab.fa-twitter
+                li: a(href='#')
+                  i.fab.fa-github
+                li: a(href='#')
+                  i.fab.fa-codepen
+        // End Contact Info 
+
+      // Start Form Contact 
+      .col-md-8
+        form(class='contact-form' id='form')
+          .row
+            // Start Form Item 
+            div(class='col-md-6 form-group')
+              i.icon.fas.fa-user
+              input(class='form-control' required type="text" placeholder='Your Name')
+            // Start Form Item 
+            div(class='col-md-6 form-group')
+              i.icon.fas.fa-envelope
+              input(class='form-control' required type="email" placeholder='Your Email')
+            // Start Form Item 
+            div(class='col-md-12 form-group')
+              input(class='form-control' required type="email" placeholder='Your Subject *')
+            // Start Form Item 
+            div(class='col-xl-12 form-group')
+              i.icon.fas.fa-comments
+              textarea(class='form-control auto-direction' required placeholder='Your Message')
+            // Start Form Item 
+            div(class='form-group')
+              button(class='btns btn-submit' type="submit" value="Submit"  data-toggle="modal" data-target="#credit-pubg"): span
+                i.fas.fa-paper-plane
+                |  Send Your Message
+      // End Form Contact 
+    include ../layout/footer
+// End Section Contact 

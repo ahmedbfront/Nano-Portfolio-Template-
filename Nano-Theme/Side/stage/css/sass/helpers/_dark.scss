@@ -1,0 +1,71 @@
+body.dark {
+  background-color: #202020;
+  color: #fffefecc;
+
+  .navbar {
+    box-shadow: 0px 0px 2px 0px black;
+  }
+
+  .navbar,
+  .main-wrapper section {
+    background-color: #202020;
+  }
+
+  .navbar .navbar-toggler {
+    background-color: #2f2f2f;
+  }
+
+  .about hr {
+    background-color: #575757;
+  }
+
+  .client .swiper-container .swiper-wrapper .swiper-slide .single-client,
+  .blog .blog-boxes,
+  .services .services-boxes,
+  .portfolio .port-arrea .port-box .port-item,
+  .portfolio .port-arrea .port-box .port-item .port-back a,
+  .contact .contact-form .form-group .form-control {
+    background-color: #2f2f2fe6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .services .services-boxes .services-box-content h4,
+  .portfolio .port-nav li:hover a,
+  .portfolio .port-nav li.active a,
+  .client
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    .single-client
+    .slide-image
+    .slide-name
+    span,
+  .header .main-text-container .main-text h2,
+  .blog .blog-boxes .blog-content h4,
+  .contact .contact-form .form-group .form-control {
+    color: #fffefecc;
+  }
+
+  .page-title p,
+  .navbar .navbar-collapse ul.navbar-nav .nav-item .nav-link,
+  .header .main-text-container .main-text .hello,
+  .header .main-text-container .main-text p,
+  .about .about-content ul li span,
+  .about .skill .text span,
+  .portfolio .port-nav li a,
+  .client
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    .single-client
+    .slide-text
+    p,
+  .blog .blog-boxes .blog-content p,
+  .contact .contact-info ul li h5,
+  footer p {
+    color: #cbcbcbd1;
+  }
+}

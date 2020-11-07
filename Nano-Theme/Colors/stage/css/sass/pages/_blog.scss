@@ -1,0 +1,51 @@
+// Start Section Blog
+.blog {
+  // Start Item Blog
+  .blog-boxes {
+    margin-bottom: 30px;
+    border: 1px solid #c2c2c2;
+    @include b-radius(16px);
+    @include transition(0.4s);
+    .blog-image {
+      img {
+        width: 100%;
+        height: 240px;
+        padding: 20px;
+        @include b-radius(32px);
+      }
+    }
+    .blog-content {
+      padding: 0 20px 40px;
+      .blog-details {
+        span {
+          color: #6c757d;
+          font-size: 14px;
+          i {
+            color: var(--main--color);
+            margin-right: 6px;
+          }
+        }
+        .blog-date {
+          margin-right: 40px;
+        }
+      }
+      h4 {
+        color: $textDark;
+        margin: 20px 0 10px;
+      }
+      p {
+        color: $pargColor;
+        margin-bottom: 20px;
+      }
+      a {
+        text-transform: none;
+        i {
+          margin-left: 12px;
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  // End Item Blog
+}
+// End Section Blog

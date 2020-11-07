@@ -1,0 +1,28 @@
+:root {
+  --main--color: #5f5f5f;
+  --bg-color: #1e90ff29;
+  --bg-color-hover: #1e90ff9e;
+}
+
+@import "sass/variables/colors";
+
+@import "sass/layout/reset";
+@import "sass/layout/global";
+
+@import "sass/helpers/mixin";
+@import "sass/helpers/buttons";
+
+@import "sass/layout/navbar";
+
+@import "sass/pages/header";
+@import "sass/pages/about";
+@import "sass/pages/services";
+@import "sass/pages/port";
+@import "sass/pages/client";
+@import "sass/pages/blog";
+@import "sass/pages/contact";
+@import "sass/layout/footer";
+
+@import "sass/layout/loadscreen";
+
+@import "sass/helpers/dark";

@@ -1,0 +1,93 @@
+// Start Section Contact
+.contact {
+  // Start Contact Info
+  .contact-info {
+    ul {
+      li {
+        margin-bottom: 26px;
+        h5 {
+          color: $primary;
+          font-size: 17px;
+          span {
+            color: $pargColor;
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+          }
+          i {
+            margin-right: 8px;
+          }
+        }
+        // Start Social Media
+        .social {
+          display: flex;
+          padding: 0;
+          margin-top: 16px;
+          li {
+            padding: 1px;
+            margin-right: 12px;
+            border-radius: 50%;
+            @include boxShadow;
+            a {
+              color: var(--main--color);
+              display: block;
+              width: 35px;
+              height: 35px;
+              text-align: center;
+              line-height: 35px;
+              @include b-radius(50%);
+              @include transition(0.4s);
+              &:hover {
+                box-shadow: inset 0.3rem 0.3rem 0.3rem #c8d0e7,
+                  inset -0.2rem -0.2rem 0.5rem #ffffff;
+              }
+            }
+          }
+        }
+        // End Social Media
+      }
+    }
+  }
+  // End Contact Info
+
+  // Start Form Contact
+  .contact-form {
+    // Start Form Item
+    .form-group {
+      margin-bottom: 20px;
+      &:nth-of-type(3) {
+        .form-control {
+          padding-left: 30px;
+        }
+      }
+      .icon {
+        position: absolute;
+        top: 18px;
+        left: 36px;
+        opacity: 0.3;
+      }
+      .form-control {
+        background-color: #e4ebf5;
+        height: 50px;
+        border: none;
+        padding-left: 45px;
+        box-shadow: inset 0.3rem 0.3rem 0.3rem #c8d0e7,
+          inset -0.2rem -0.2rem 0.5rem #ffffff;
+        @include b-radius(30px);
+      }
+      textarea {
+        padding-top: 12px;
+        height: 150px !important;
+      }
+      .btns {
+        margin-left: 15px;
+        button {
+          background-color: transparent;
+        }
+      }
+    }
+    // End Form Item
+  }
+  // End Form Contact
+}
+// End Section Contact

@@ -1,0 +1,79 @@
+body.dark {
+  background-color: #202020;
+  color: #fffefeeb;
+
+  .site-top,
+  .navbar .navbar-toggler,
+  .navbar.fx-top,
+  .services,
+  .client,
+  .contact,
+  footer {
+    background-color: #202020;
+  }
+
+  .site-top,
+  .navbar .navbar-toggler,
+  .services .services-boxes,
+  .portfolio .port-arrea .port-box .port-item,
+  .portfolio .port-arrea .port-box .port-item .port-back a,
+  .client .swiper-container .swiper-wrapper .swiper-slide .single-client,
+  .client .client-slides .owl-item .single-client,
+  .blog .blog-boxes,
+  .contact .contact-form .form-group .form-control {
+    background-color: #2f2f2fe6;
+    border: 0;
+  }
+
+  .about hr {
+    background-color: #5d5d5d;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .header .main-text-container .main-text h2,
+  .services .services-boxes .services-box-content h4,
+  .portfolio .port-nav li:hover a,
+  .portfolio .port-nav li.active a,
+  .portfolio .port-arrea .port-box .port-item .port-back a i,
+  .client .client-slides .owl-item .single-client .slide-image .slide-name span,
+  .blog .blog-boxes .blog-content h4,
+  .contact .contact-form .form-group .form-control {
+    color: #fffefeeb;
+  }
+
+  .page-title p,
+  .navbar .navbar-collapse ul.navbar-nav .nav-item .nav-link,
+  .header .main-text-container .main-text .hello,
+  .header .main-text-container .main-text p,
+  .about .about-content ul li span,
+  .about .skill .text span,
+  .services .services-boxes .services-box-content p,
+  .portfolio .port-nav li a,
+  .client .client-slides .owl-item .single-client .slide-text p,
+  .client
+    .client-slides
+    .owl-item
+    .single-client
+    .slide-image
+    .slide-name
+    small,
+  .blog .blog-boxes .blog-content p,
+  .contact .contact-info ul li h5,
+  footer p {
+    color: #cbcbcbd1;
+  }
+
+  .btns {
+    &:before {
+      background: radial-gradient(
+        ellipse at center,
+        #fffefe59 0%,
+        transparent 80%
+      );
+    }
+  }
+}

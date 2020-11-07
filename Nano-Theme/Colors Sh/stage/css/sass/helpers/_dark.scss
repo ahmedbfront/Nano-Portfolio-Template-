@@ -1,0 +1,95 @@
+body.dark {
+  background-color: #2c2d30;
+  color: #fffefeeb;
+
+  .site-top,
+  .navbar,
+  .navbar .navbar-toggler,
+  .services,
+  .client,
+  .contact,
+  footer,
+  .about,
+  .portfolio,
+  .blog {
+    background-color: #2c2d30;
+  }
+
+  .portfolio .port-arrea .port-box .port-item,
+  .portfolio .port-arrea .port-box .port-item .port-back a,
+  .client .swiper-container .swiper-wrapper .swiper-slide .single-client {
+    background-color: #2f2f2fe6;
+  }
+
+  .about hr {
+    background-color: #5d5d5d;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .header .main-text-container .main-text h2,
+  .services .services-boxes .services-box-content h4,
+  .portfolio .port-nav li:hover a,
+  .portfolio .port-nav li.active a,
+  .portfolio .port-arrea .port-box .port-item .port-back a i,
+  .client .client-slides .owl-item .single-client .slide-image .slide-name span,
+  .blog .blog-boxes .blog-content h4,
+  .contact .contact-form .form-group .form-control {
+    color: #fffefeeb;
+  }
+
+  .page-title p,
+  .navbar .navbar-collapse ul.navbar-nav .nav-item .nav-link,
+  .header .main-text-container .main-text .hello,
+  .header .main-text-container .main-text p,
+  .about .about-content ul li span,
+  .about .my-skills .all-skills .skill .text span,
+  .services .services-boxes .services-box-content p,
+  .portfolio .port-nav li a,
+  .client .client-slides .owl-item .single-client .slide-text p,
+  .client
+    .client-slides
+    .owl-item
+    .single-client
+    .slide-image
+    .slide-name
+    small,
+  .blog .blog-boxes .blog-content p,
+  .contact .contact-info ul li h5,
+  footer p {
+    color: #cbcbcbd1;
+  }
+
+  .navbar.fx-top,
+  .navbar .navbar-toggler,
+  .about .my-skills .all-skills,
+  .services .services-boxes,
+  .portfolio .port-nav li,
+  .client .client-slides .owl-item .single-client,
+  .blog .blog-boxes,
+  .site-top {
+    box-shadow: 0.3rem 0.3rem 0.3rem #202125, -0.2rem -0.2rem 0.3rem #3e3e3e;
+  }
+
+  .about .image-container img,
+  .portfolio .port-nav li:hover a,
+  .portfolio .port-nav li.active a,
+  .portfolio .port-arrea .port-box .port-item .port-front,
+  .contact .contact-form .form-group .form-control {
+    box-shadow: inset 0.3rem 0.3rem 0.3rem #202125,
+      inset -0.2rem -0.2rem 0.3rem #3e3e3e;
+  }
+
+  .btns {
+    &:before {
+      background: radial-gradient(
+        ellipse at center,
+        #fffefe59 0%,
+        transparent 80%
+      );
+    }
+  }
+}

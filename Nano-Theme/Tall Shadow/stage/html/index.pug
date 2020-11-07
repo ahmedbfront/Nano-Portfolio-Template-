@@ -1,0 +1,81 @@
+- var pageTitle = ' Nano | Portfolio Template ';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    //- Site Meta 
+    include pug/layout/meta
+    // Site Style 
+    include pug/layout/styles
+  body
+
+    //- Navbar
+    include pug/layout/navbar
+
+    .main-wrapper
+
+      //- Home Page 
+      include pug/components/header
+
+      //- About Page 
+      include pug/components/about
+
+      //- Services Page 
+      include pug/components/services
+
+      //- Portfolio Page 
+      include pug/components/port
+
+      //- Client Page 
+      include pug/components/client
+
+      //- Blog Page 
+      include pug/components/blog
+      
+      //- Contact Page 
+      include pug/components/contact
+
+      //- Footer Page 
+      include pug/layout/footer
+
+    // Start Button Site Top
+    .site-top
+      <i class="fas fa-arrow-up"></i>
+    // End Button Site Top
+
+    // Start Preloading Screen 
+    .preloader
+      .preloader-container
+        .progress-line-container
+          .progress-line
+    // End Preloading Screen 
+
+
+    // Start Dark Mode 
+    .dark-mode.btn
+      <i class="fas fa-moon active"></i>
+      <i class="fas fa-lightbulb"></i>
+    // End Dark Mode 
+
+    // Start Colors Switch 
+    .style-switcher
+      h5 Style Switcher 
+      button.btn.btn-switcher
+        i.fa.fa-cog.fa-spin
+      ul.list-unstyled.colors-list
+        li(style='background: #1e90ff;' data-color='#1e90ff' data-bg='#1e90ff29' data-bghv='#1e90ff9e')
+        li(style='background: #7727ff;' data-color='#7727ff' data-bg='#7727ff29' data-bghv='#7727ff9e')
+        li(style='background: #4504F1;' data-color='#4504F1' data-bg='#4504F129' data-bghv='#4504F19e')
+        li(style='background: #e10000;' data-color='#e10000' data-bg='#e1000029' data-bghv='#e100009e')
+        li(style='background: #15ba1d;' data-color='#15ba1d' data-bg='#15ba1d29' data-bghv='#15ba1d9e')
+        li(style='background: #ffcc00;' data-color='#ffcc00' data-bg='#ffcc0029' data-bghv='#ffcc009e')
+        li(style='background: #ff5e00;' data-color='#ff5e00' data-bg='#ff5e0029' data-bghv='#ff5e009e')
+        li(style='background: #ff00d0;' data-color='#ff00d0' data-bg='#ff00d029' data-bghv='#ff00d09e')
+        li(style='background: #FFB6C1' data-color='#FFB6C1' data-bg='#FFB6C129' data-bghv='#FFB6C19e')
+    // End Colors Switch 
+
+    // Site Script 
+    include pug/layout/scripts
+    
+
+    
+    

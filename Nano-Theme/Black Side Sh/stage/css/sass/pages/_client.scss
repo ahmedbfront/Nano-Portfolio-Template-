@@ -1,0 +1,85 @@
+// Start Section Client
+.client {
+  // Start Slider
+  .swiper-container {
+    padding-bottom: 60px;
+    margin-top: 100px;
+    transform: scale(1.1);
+    .swiper-wrapper {
+      // Start Item Slide
+      .swiper-slide {
+        width: 300px;
+        margin-top: 8px;
+        overflow: hidden;
+        @include boxShadow;
+        // Start Item
+        .single-client {
+          height: 180px;
+          padding: 20px;
+          border-radius: 12px;
+          .slide-image {
+            display: flex;
+            margin-bottom: 14px;
+            figure {
+              margin: 0;
+              img {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+              }
+            }
+            .slide-name {
+              align-self: center;
+              margin-left: 10px;
+              span {
+                display: block;
+                color: $textDark;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin-bottom: -4px;
+              }
+              small {
+                color: $pargColor;
+              }
+            }
+          }
+          .slide-icon {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            i {
+              color: var(--main--color);
+              font-size: 30px;
+            }
+          }
+          .slide-text {
+            p {
+              color: #616161;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      // End Item Slide
+    }
+    // Pagination
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        background-color: var(--main--color);
+        width: 16px;
+        height: 8px;
+        margin: -16px 6px;
+        opacity: 0.6;
+        border-radius: 0;
+        transition: all 0.3s;
+        &.swiper-pagination-bullet-active,
+        &:hover {
+          width: 22px;
+          opacity: 1;
+        }
+      }
+    }
+    // Pagination
+  }
+}
+// End Section Client

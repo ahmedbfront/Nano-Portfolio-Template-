@@ -1,0 +1,12 @@
+@mixin boxShadow {
+  background-color: #e4ebf5;
+  box-shadow: 0.3rem 0.3rem 0.4rem #c8d0e7, -0.3rem -0.3rem 0.4rem #f8f8f8;
+}
+
+@mixin transition($delay) {
+  transition: all $delay;
+}
+
+@mixin b-radius($px) {
+  border-radius: $px;
+}

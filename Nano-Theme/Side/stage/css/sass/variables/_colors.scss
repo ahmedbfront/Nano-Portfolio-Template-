@@ -1,0 +1,105 @@
+$background: #f8f8f8;
+
+$divColor: #f0f0f063;
+
+$textDark: #343a40;
+
+$primaryHover: #3c3c3c;
+
+$primary: #5f5f5f;
+
+$textColor: #5f5f5f;
+
+$pargColor: #6c757d;
+
+$white: #fafafa;
+
+// Color Hex Codes:
+// #7727FF
+// #91A8CE
+// #E7F0FF
+// #91A8CE
+
+// $arshia: #f1f3f6;
+// background: #def1ff5c;
+// box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+// border-radius: 1rem;
+// box-shadow: inset 3px 3px 3px #dadada, inset -3px -3px 3px #fafafa;
+
+// $background: #ffffff;
+// $primary: #388af7;
+
+// $primaryHover: #fb397d;
+
+// // $textColor: ;
+// $pargColor: #726a84;
+
+// line-height: 1.6;
+
+// $background: #253143;
+// $primary: #2196F3;
+// $primary: #00c7fc;
+
+// $primaryHover: #fb397d;
+
+// $flatRed: #c0392b;
+
+// $textColor: #2196F3;
+// $pargColor: #ffffffcc;
+// $textWhite: #fff;
+
+// $white: white;
+// $offWhite: #eee;
+// $black: #111;
+
+$fontText: "Poppins", sans-serif;
+$fontParg: "Mulish", sans-serif;
+
+// $btn-hvr: #e1e1e1;
+
+// $bg: #f4f4f4;
+// $ribbon: #4b9ae5;
+// $tail: darken($ribbon, 5%);
+// $ribbonSize: 0.5em;
+// $fontSize: 2.5em;
+// $font: "Roboto", sans-serif;
+
+// .ribbon {
+//   background: $ribbon;
+//   display: inline-block;
+//   color: $bg;
+//   padding: $ribbonSize 0.7em;
+//   font-weight: 900;
+//   letter-spacing: 0.2em;
+//   position: relative;
+//   font-size: $fontSize;
+//   text-transform: uppercase;
+//   transform-style: preserve-3d;
+//   transform: rotate(-20deg) skew(-20deg, 10deg);
+
+//   &:before,
+//   &:after {
+//     content: "";
+//     width: 0;
+//     height: 2em;
+//     display: block;
+//     background: #4993da;
+//     position: absolute;
+//     border-style: solid;
+//     border-width: $ribbonSize;
+//     z-index: -1; // only necessary for flat (transform-style)
+//     transform: translateZ(-1em); // orders the ribbon tails
+//   }
+
+//   &:before {
+//     left: $ribbonSize * -1;
+//     top: $ribbonSize;
+//     border-color: $tail darken($tail, 10%) $tail $tail;
+//   }
+
+//   &:after {
+//     right: $ribbonSize * -1;
+//     top: $ribbonSize * -1;
+//     border-color: $tail $tail $tail darken($tail, 10%);
+//   }
+// }

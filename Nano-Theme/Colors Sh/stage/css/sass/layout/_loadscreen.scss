@@ -1,0 +1,80 @@
+// Start Preloading Screen
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999999999999;
+  pointer-events: none;
+  backface-visibility: hidden;
+  @include transition(0.4s linear);
+  &.loaded {
+    &:before {
+      transform: translateY(-101%);
+    }
+    &:after {
+      transform: translateY(101%);
+    }
+    .preloader-container {
+      opacity: 0;
+      visibility: hidden;
+      @include transition(0s);
+    }
+  }
+  &:before {
+    top: 0;
+    bottom: 50%;
+  }
+  &:after {
+    top: 50%;
+    bottom: 0;
+  }
+  &:before,
+  &:after {
+    content: "";
+    background-color: #2f2f2f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    @include transition(0.5s linear);
+  }
+  .preloader-container {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 10;
+    transform: translateY(-50%);
+    h2 {
+      color: #fff;
+      font-size: 42px;
+      margin: 0;
+      padding: 20px 0;
+      letter-spacing: 4px;
+    }
+    .progress-line-container {
+      background: #fff;
+      width: 100vw;
+      .progress-line {
+        background-color: var(--main--color);
+        margin-top: 0;
+        margin-left: -100vw;
+        width: 100vw;
+        height: 5px;
+        @include transition(0.5s);
+        animation: progess 2.5s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes progess {
+  0% {
+    margin-left: -100vw;
+  }
+
+  100% {
+    margin-left: 100vw;
+  }
+}
+// End Preloading Screen

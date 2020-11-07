@@ -1,0 +1,111 @@
+// Padding Top
+.pd-top {
+  padding-top: 80px;
+}
+
+// Padding Bottom
+.pd-btm {
+  padding-bottom: 60px;
+}
+
+// Title Page
+.page-title {
+  margin: 0 auto 60px;
+  text-align: center;
+  h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    span {
+      color: var(--main--color);
+    }
+  }
+  p {
+    position: relative;
+    display: inline-block;
+    color: $pargColor;
+    &:before,
+    &:after {
+      background-color: var(--main--color);
+      content: "";
+      position: absolute;
+      top: 11px;
+      width: 20px;
+      height: 3px;
+    }
+    &:before {
+      left: -30px;
+    }
+    &:after {
+      right: -30px;
+    }
+  }
+}
+
+// Main Section
+.main-wrapper {
+  section {
+    background-color: #e4ebf5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 92px;
+    z-index: 0;
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 0.6s ease 0.6s, opacity 0s ease 0.6s,
+      -webkit-transform 0.6s ease 0.6s;
+    &.active {
+      transform: translate3d(0, 0, 0);
+      z-index: 20;
+      opacity: 1;
+      transition: -webkit-transform 0.6s ease;
+      transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  // Padding Top
+  .pd-top {
+    padding-top: 60px;
+  }
+
+  // Padding Bottom
+  .pd-btn {
+    padding-bottom: 40px;
+  }
+
+  // Title Page
+  .page-title {
+    margin: 0 auto 40px;
+  }
+
+  // Main Section
+  .main-wrapper {
+    section {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  // Start Title Page
+  .page-title {
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  // End Title Page
+}

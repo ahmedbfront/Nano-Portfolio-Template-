@@ -1,0 +1,53 @@
+- var pageTitle = ' Nano | Portfolio Template ';
+<!DOCTYPE html>
+html
+  head
+    //- Site Meta 
+    include pug/layout/meta
+    // Site Style 
+    include pug/layout/styles
+  body#body-dark
+
+    //- Navbar
+    include pug/layout/navbar
+
+    .main-wrapper
+
+      //- Home Page 
+      include pug/components/header
+
+      //- About Page 
+      include pug/components/about
+
+      //- Services Page 
+      include pug/components/services
+
+      //- Portfolio Page 
+      include pug/components/port
+
+      //- Client Page 
+      include pug/components/client
+
+      //- Blog Page 
+      include pug/components/blog
+      
+      //- Contact Page 
+      include pug/components/contact
+
+
+    // Start Preloading Screen 
+    .preloader
+      .preloader-container
+        .progress-line-container
+          .progress-line
+    // End Preloading Screen 
+
+    // Start Dark Mode 
+    .dark-mode.btn
+      <i class="fas fa-moon active"></i>
+      <i class="fas fa-lightbulb"></i>
+    // End Dark Mode 
+
+    // Site Script 
+    include pug/layout/scripts
+    

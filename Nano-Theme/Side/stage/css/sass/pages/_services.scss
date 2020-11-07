@@ -1,0 +1,33 @@
+// Start section Services
+.services {
+  // Start Item Service
+  .services-boxes {
+    display: flex;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    @include b-radius(12px);
+    @include transition(0.3s);
+    &:hover {
+      transform: translateY(-10px);
+    }
+    .services-box-icon {
+      i {
+        color: var(--main--color);
+        font-size: 30px;
+        margin-right: 20px;
+      }
+    }
+    .services-box-content {
+      h4 {
+        color: $textDark;
+        margin-bottom: 10px;
+      }
+      p {
+        color: $pargColor;
+        margin: 0;
+      }
+    }
+  }
+  // End Item Service
+}
+// End section Services

@@ -1,0 +1,78 @@
+body.dark {
+  background-color: #202020;
+  color: #fffefeeb;
+
+  // Main Section
+  .main-wrapper {
+    section {
+      background-color: #202020;
+    }
+  }
+
+  .navbar,
+  .navbar .navbar-toggler {
+    background-color: #202020;
+  }
+
+  .site-top,
+  .navbar .navbar-toggler,
+  .portfolio .port-arrea .port-box .port-item,
+  .portfolio .port-arrea .port-box .port-item .port-back a,
+  .client .swiper-container .swiper-wrapper .swiper-slide .single-client,
+  .blog .blog-boxes,
+  .services .services-boxes,
+  .contact .contact-form .form-group .form-control {
+    background-color: #2f2f2fe6;
+  }
+
+  .about hr {
+    background-color: #5d5d5d;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .header .main-text-container .main-text h2,
+  .services .services-boxes .services-box-content h4,
+  .portfolio .port-nav li:hover a,
+  .portfolio .port-nav li.active a,
+  .portfolio .port-arrea .port-box .port-item .port-back a i,
+  .client
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    .single-client
+    .slide-image
+    .slide-name
+    span,
+  .blog .blog-boxes .blog-content h4,
+  .contact .contact-form .form-group .form-control {
+    color: #fffefeeb;
+  }
+
+  .page-title p,
+  .navbar .navbar-collapse ul.navbar-nav .nav-item .nav-link,
+  .header .main-text-container .main-text .hello,
+  .header .main-text-container .main-text p,
+  .about .about-content ul li span,
+  .about .skill .text span,
+  .portfolio .port-nav li a,
+  .client
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    .single-client
+    .slide-text
+    p,
+  .blog .blog-boxes .blog-content p,
+  .contact .contact-info ul li h5,
+  footer p {
+    color: #cbcbcbd1;
+  }
+
+  .navbar.fx-top {
+    box-shadow: 0.3rem 0.3rem 0.3rem #2c2c2ce6, -0.2rem -0.2rem 0.3rem #2f2f2fe6;
+  }
+}

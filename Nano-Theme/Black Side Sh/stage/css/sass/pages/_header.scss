@@ -1,0 +1,105 @@
+// Start Section Header
+.header {
+  height: 100vh;
+  // Start Text Content
+  .main-text-container {
+    .main-text {
+      .hello {
+        display: block;
+        color: $primary;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $fontText;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-weight: 600;
+      }
+      h2 {
+        color: var(--main--color);
+        font-weight: bold;
+        span {
+          padding: 0;
+          &:after {
+            background-color: var(--main--color);
+          }
+        }
+      }
+      p {
+        color: $pargColor;
+      }
+      .call-to-actions-home {
+        .btns {
+          &:nth-of-type(1) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+  // End Text Content
+}
+// End Section Header
+
+@media (min-width: 992px) {
+  // Start Section Header
+  .header {
+    // Start Text Content
+    .main-text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30rem;
+    }
+    // End Text Content
+  }
+  // End Section Header
+}
+
+@media (max-width: 991.98px) {
+  // Start Section Header
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  // End Section Header
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  // Start Section Header
+  .header {
+    // Start Text Content
+    .main-text-container {
+      width: 30rem;
+    }
+    // End Text Content
+  }
+  // End Section Header
+}
+
+@media (max-width: 421px) {
+  // Start Text Content
+  .header .main-text-container .main-text .call-to-actions-home .btns {
+    width: 100%;
+    text-align: center;
+
+    &:nth-of-type(1) {
+      margin-right: 0;
+
+      margin-bottom: 10px;
+    }
+    .btn-btn {
+      width: 100%;
+    }
+  }
+  // End Text Content
+}
+
+@media (max-width: 396px) {
+  // Start Text Content
+  .header .main-text-container .main-text .ah-headline span {
+    display: block;
+  }
+  // End Text Content
+}

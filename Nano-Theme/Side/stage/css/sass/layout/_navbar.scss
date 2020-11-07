@@ -1,0 +1,165 @@
+// Start Navbar
+.navbar {
+  background-color: #e4ebf5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 22;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px -6px black;
+  transition: all 0.3s;
+  &.show-nav {
+    left: 0;
+  }
+  // Logo
+  .navbar-brand {
+    color: var(--main--color);
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+      color: var(--main--color);
+    }
+    &:before,
+    &:after {
+      content: "";
+      background-color: var(--main--color);
+      position: absolute;
+      width: 28px;
+      height: 3px;
+    }
+    &:before {
+      top: -1px;
+      left: 0;
+    }
+    &:after {
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .navbar-toggler {
+    background: #ffffff;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 120px;
+    top: 24px;
+    border: 0;
+    z-index: 9999;
+    &:hover {
+      .navbar-icon {
+        &:before {
+          transform: rotate3d(0, 0, 2, 8deg);
+        }
+        &:after {
+          transform: rotate3d(0, 0, -2, 8deg);
+        }
+      }
+    }
+    .navbar-icon {
+      background-color: var(--main--color);
+      position: relative;
+      width: 26px;
+      height: 2px;
+      display: block;
+      cursor: pointer;
+      &:after,
+      &:before {
+        background-color: var(--main--color);
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        display: block;
+        transition: all 0.2s;
+      }
+      &:after {
+        bottom: -8px;
+      }
+      &:before {
+        top: -8px;
+      }
+
+      &.open-icon {
+        background-color: transparent;
+        &:after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+        &:before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  // Start Navbar Link
+  .navbar-collapse {
+    display: block;
+    position: relative;
+    top: 50px;
+    ul.navbar-nav {
+      display: block;
+      .nav-item {
+        position: relative;
+        margin: 18px 0px;
+        &:hover,
+        &.active {
+          .nav-link {
+            color: var(--main--color) !important;
+          }
+        }
+        .nav-link {
+          color: #726a84;
+          text-align: center;
+          text-transform: capitalize;
+          padding: 0;
+          transition: all 0.4s;
+          i {
+            display: block;
+            margin-bottom: 6px;
+          }
+        }
+      }
+    }
+  }
+  // End Navbar Link
+}
+// End Navbar
+
+@keyframes fadeInDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  // Start Navbar
+  .navbar {
+    left: -100px;
+  }
+  // End Navbar
+}
+
+@media (max-width: 767.98px) {
+  // Start Navbar
+  .navbar {
+    // Start Navbar Link
+    .navbar-collapse ul.navbar-nav {
+      .nav-item .nav-link {
+        i {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    // End Navbar Link
+  }
+  // End Navbar
+}

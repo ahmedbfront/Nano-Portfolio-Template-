@@ -1,0 +1,41 @@
+// Start Navbar 
+nav.navbar.navbar-expand-lg.navbar-light
+  .container
+    // Logo 
+    a.navbar-brand(href='index.html' title='Nano')=  '  Nano  '
+    button.navbar-toggler
+      span.navbar-icon
+    // Start Navbar Link 
+    .navbar-collapse.collapse.justify-content-end
+      ul.navbar-nav
+        li.nav-item.active(data-section='header')
+          a.nav-link.nav-btn(href='#header')
+            i.fa.fa-home
+            span.nav-title-link Home
+        li.nav-item(data-section='about')
+          a.nav-link.nav-btn(href='#about')
+            i.fas.fa-user
+            span.nav-title-link About
+        li.nav-item(data-section='services')
+          a.nav-link.nav-btn(href='#services')
+            i.fa.fa-address-book
+            span.nav-title-link Services
+        li.nav-item(data-section='portfolio')
+          a.nav-link.nav-btn(href='#portfolio')
+            i.fas.fa-briefcase
+            span.nav-title-link Portfolio
+        li.nav-item(data-section='client')
+          a.nav-link.nav-btn(href='#client')
+            i.fas.fa-comments
+            span.nav-title-link Client
+        li.nav-item(data-section='blog')
+          a.nav-link.nav-btn(href='#blog')
+            i.fas.fa-edit
+            span.nav-title-link Blog
+        li.nav-item(data-section='contact')
+          a.nav-link.nav-btn(href='#contact')
+            i.fas.fa-envelope
+            span.nav-title-link Contact
+    // End Navbar Link 
+    
+// End Navbar 

@@ -1,0 +1,41 @@
+.btns {
+  background-color: var(--main--color);
+  display: inline-block;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 80px;
+  transition: all 0.4s;
+  i {
+    margin-right: 12px;
+  }
+  &:before {
+    content: "";
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      transparent 80%
+    );
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 80%;
+    height: 10px;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  &:hover {
+    color: #fff;
+
+    transform: translateY(-5px);
+    &:before {
+      opacity: 1;
+      transform: translateY(5px);
+    }
+  }
+}

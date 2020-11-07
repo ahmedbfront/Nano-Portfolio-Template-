@@ -1,0 +1,43 @@
+// Start Section Footer
+footer {
+  padding: 20px;
+  text-align: center;
+  p {
+    color: #726a84;
+    font-size: 16px;
+  }
+}
+// End Section Footer
+
+// Start Button Site Top
+.site-top {
+  background-color: #ffffff;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  padding: 8px 14px;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 22;
+  transition: all 0.3s;
+  &:hover {
+    bottom: 45px;
+  }
+  i {
+    color: var(--main--color);
+  }
+}
+// End Button Site Top
+
+@media (max-width: 575.98px) {
+  // Start Button Site Top
+  .site-top {
+    right: 40px;
+    bottom: 40px;
+    &:hover {
+      bottom: 45px;
+    }
+  }
+  // End Button Site Top
+}

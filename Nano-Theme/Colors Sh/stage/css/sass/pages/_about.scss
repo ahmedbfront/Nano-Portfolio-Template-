@@ -1,0 +1,185 @@
+// Start Section About
+.about {
+  // Start Personal Infos
+  .image-container {
+    position: relative;
+    max-width: 400px;
+    z-index: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 26px;
+      left: 26px;
+      right: -26px;
+      bottom: -26px;
+      border: 6px solid var(--main--color);
+      z-index: -1;
+    }
+    img {
+      padding: 12px;
+      box-shadow: inset 0.3rem 0.3rem 0.3rem #c8d0e7,
+        inset -0.2rem -0.2rem 0.5rem #ffffff;
+    }
+  }
+  // End Personal Infos
+
+  // Start About Content
+  .about-content {
+    h4 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      span {
+        color: var(--main--color);
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 12px;
+        span {
+          color: #5f5f5f;
+          font-weight: 500;
+          font-family: $fontText;
+        }
+        .at-title {
+          display: inline-block;
+          width: 130px;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  // End About Content
+
+  hr {
+    background-color: #c6c6c6;
+    margin: 5rem 0 4rem;
+  }
+  // Title Skill
+  .title-skill {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    span {
+      color: var(--main--color);
+    }
+  }
+
+  .my-skills {
+    // Start All Skills
+    .all-skills {
+      padding: 18px 20px 26px;
+      margin-bottom: 30px;
+      @include b-radius(16px);
+      box-shadow: 0.3rem 0.3rem 0.4rem #c8d0e7, -0.3rem -0.3rem 0.4rem #f8f8f8;
+      @include transition(0.3s);
+      .skill {
+        &:last-child {
+          .chart-bar {
+            margin: 0;
+          }
+        }
+        .text {
+          display: flex;
+          justify-content: space-between;
+          span {
+            color: #5f5f5f;
+            font-family: $fontText;
+            margin-bottom: 10px;
+          }
+        }
+        .chart-bar {
+          background-color: var(--bg-color);
+          position: relative;
+          height: 8px;
+          margin-bottom: 20px;
+          @include b-radius(6px);
+          transition: all 1s;
+          .item-progress {
+            background-color: var(--main--color);
+            position: absolute;
+            width: 0;
+            height: 8px;
+            @include b-radius(6px);
+            transition: all 1s;
+          }
+          .percent {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: $primary;
+            font-size: 14px;
+          }
+        }
+      }
+      // End Item Skill
+    }
+    // End All Skills
+  }
+}
+// End Section About
+
+@media (max-width: 991.98px) {
+  // Start Section About
+  .about {
+    // Start Personal Infos
+    .image-container {
+      margin-bottom: 40px;
+    }
+    // End Personal Infos
+  }
+  // End Section About
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about {
+    .about-content {
+      margin-left: 24px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  // Start Section About
+  .about {
+    // Start Personal Infos
+    .image-container {
+      margin-bottom: 60px;
+    }
+    // End Personal Infos
+    hr {
+      margin: 3rem 0 2rem;
+    }
+  }
+  // End Section About
+}
+
+@media (max-width: 450px) {
+  // Start Section About
+  .about {
+    // Start Personal Infos
+    .image-container {
+      margin-bottom: 40px;
+      &:before {
+        display: none;
+      }
+    }
+    // End Personal Infos
+  }
+  // End Section About
+}
+
+@media (max-width: 420px) {
+  // Start Section About
+  .about {
+    // Start About Content
+    .about-content {
+      h4 {
+        font-size: 28px;
+      }
+    }
+    // End About Content
+  }
+  // End Section About
+}
